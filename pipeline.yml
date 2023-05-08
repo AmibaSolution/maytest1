@@ -1,10 +1,10 @@
 stages:
   - stage : Continuous_Integration
     jobs : ff
-    - job : build
-      steps:
-      - script : dotnet restore
-        - script : dotnet build
-        - job : test 
+      - job : build
+        steps:
+          - script : dotnet restore
+          - script : dotnet build
+      - job : test 
           - script : dotnet build
           - script : dotnet test 

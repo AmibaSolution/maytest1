@@ -2,7 +2,7 @@ stages:
   - stage : Continuous_Integration
     jobs :
      - job : build
-      steps:
+       steps:
        - script : dotnet restore
        - script : dotnet build
      - job : test 

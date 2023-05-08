@@ -1,6 +1,6 @@
 stages:
   - stage : Continuous_Integration
-      jobs:
+      jobs :
         - job : build
           steps:
             - script : dotnet restore

@@ -4,10 +4,10 @@ stages:
      - job : build
        steps:
        - script : dotnet restore
-         displayname : Restore package
+         displayName : Restore package
        - script : dotnet build
        - script : dotnet run
-         displayname : Run the application
+         displayName : Run the application
      - job : test 
        steps :
        - script : dotnet build
